@@ -66,7 +66,7 @@ def main():
 
     app = QtWidgets.QApplication(sys.argv)
     app.setApplicationName(APP_NAME)
-    app.setOrganizationName("metinz42")
+    app.setOrganizationName("metinoztas")
 
     # Yüksek DPI desteği
     app.setAttribute(QtCore.Qt.AA_EnableHighDpiScaling, True)

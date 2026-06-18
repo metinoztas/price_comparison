@@ -8,8 +8,8 @@ import os
 # --- Uygulama Ayarları ---
 APP_NAME    = "NTH Fiyat Takip"
 APP_VERSION = "2.0.0"
-APP_AUTHOR  = "metinz42"
-GITHUB_URL  = "https://github.com/metinz42"
+APP_AUTHOR  = "metinoztas"
+GITHUB_URL  = "https://github.com/metinoztas"
 
 # --- Dosya Yolları ---
 BASE_DIR   = os.path.dirname(os.path.abspath(__file__))
