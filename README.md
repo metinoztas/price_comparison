@@ -2,10 +2,6 @@
 
 [🇹🇷 Türkçe (Turkish)](#türkçe) | [🇬🇧 English](#english)
 
-
-
-
-
 <h2 id="english">🇬🇧 English</h2>
 
 This project is a desktop application that concurrently queries and compares the prices of selected technological products (such as smartphones) on **Amazon.com.tr**, **N11**, and **Hepsiburada**.
