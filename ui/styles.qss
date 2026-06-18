@@ -1,0 +1,229 @@
+/* ================================================================
+   ui/styles.qss — NTH Fiyat Takip — Dark Theme Qt Style Sheet
+   ================================================================ */
+
+/* ---- Genel ---- */
+QMainWindow, QWidget#centralWidget {
+    background-color: #0D1117;
+    color: #E6EDF3;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 13px;
+}
+
+/* ---- GroupBox ---- */
+QGroupBox {
+    background-color: #161B22;
+    border: 1px solid #30363D;
+    border-radius: 10px;
+    margin-top: 14px;
+    padding: 12px 10px 10px 10px;
+    color: #8B949E;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 12px;
+    padding: 0 6px;
+}
+
+/* ---- Labels ---- */
+QLabel {
+    color: #E6EDF3;
+}
+QLabel#titleLabel {
+    color: #58A6FF;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+QLabel#subtitleLabel {
+    color: #8B949E;
+    font-size: 11px;
+}
+QLabel#statusLabel {
+    color: #8B949E;
+    font-size: 11px;
+    font-style: italic;
+}
+
+/* ---- ComboBox ---- */
+QComboBox {
+    background-color: #21262D;
+    border: 1px solid #30363D;
+    border-radius: 6px;
+    color: #E6EDF3;
+    padding: 6px 10px;
+    font-size: 13px;
+    min-height: 30px;
+}
+QComboBox:hover {
+    border-color: #58A6FF;
+}
+QComboBox:focus {
+    border-color: #58A6FF;
+    outline: none;
+}
+QComboBox::drop-down {
+    border: none;
+    width: 24px;
+}
+QComboBox::down-arrow {
+    image: none;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 6px solid #8B949E;
+    width: 0;
+    height: 0;
+}
+QComboBox QAbstractItemView {
+    background-color: #161B22;
+    border: 1px solid #30363D;
+    border-radius: 6px;
+    color: #E6EDF3;
+    selection-background-color: #1F6FEB;
+    outline: none;
+}
+
+/* ---- Search Button ---- */
+QPushButton#searchButton {
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:0,
+        stop:0 #1F6FEB, stop:1 #388BFD
+    );
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 28px;
+    letter-spacing: 0.5px;
+}
+QPushButton#searchButton:hover {
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:0,
+        stop:0 #388BFD, stop:1 #58A6FF
+    );
+}
+QPushButton#searchButton:pressed {
+    background: #1158C7;
+}
+QPushButton#searchButton:disabled {
+    background-color: #21262D;
+    color: #484F58;
+}
+
+/* ---- GitHub Button ---- */
+QPushButton#githubButton {
+    background-color: transparent;
+    border: 1px solid #30363D;
+    border-radius: 6px;
+    padding: 4px;
+}
+QPushButton#githubButton:hover {
+    background-color: #21262D;
+    border-color: #58A6FF;
+}
+
+/* ---- Progress Bar ---- */
+QProgressBar {
+    background-color: #21262D;
+    border: none;
+    border-radius: 3px;
+    height: 4px;
+    text-align: center;
+}
+QProgressBar::chunk {
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:0,
+        stop:0 #1F6FEB, stop:1 #58A6FF
+    );
+    border-radius: 3px;
+}
+
+/* ---- Scrollbar ---- */
+QScrollBar:vertical {
+    background: #161B22;
+    width: 8px;
+    border-radius: 4px;
+    margin: 0;
+}
+QScrollBar::handle:vertical {
+    background: #30363D;
+    border-radius: 4px;
+    min-height: 30px;
+}
+QScrollBar::handle:vertical:hover {
+    background: #58A6FF;
+}
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical { height: 0; }
+
+QScrollBar:horizontal {
+    background: #161B22;
+    height: 8px;
+    border-radius: 4px;
+    margin: 0;
+}
+QScrollBar::handle:horizontal {
+    background: #30363D;
+    border-radius: 4px;
+    min-width: 30px;
+}
+QScrollBar::handle:horizontal:hover { background: #58A6FF; }
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal { width: 0; }
+
+/* ---- Result Card Frame ---- */
+QFrame#resultCard {
+    border-radius: 12px;
+    border: 1px solid #30363D;
+}
+QFrame#resultCard:hover {
+    border-color: #58A6FF;
+}
+
+/* ---- Link Button inside card ---- */
+QPushButton#linkButton {
+    background-color: transparent;
+    color: #58A6FF;
+    border: 1px solid #30363D;
+    border-radius: 6px;
+    padding: 5px 12px;
+    font-size: 12px;
+}
+QPushButton#linkButton:hover {
+    background-color: #1F6FEB22;
+    border-color: #58A6FF;
+}
+
+/* ---- History Panel ---- */
+QListWidget {
+    background-color: #161B22;
+    border: 1px solid #30363D;
+    border-radius: 8px;
+    color: #E6EDF3;
+    outline: none;
+}
+QListWidget::item {
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+QListWidget::item:selected {
+    background-color: #1F6FEB;
+    color: #FFFFFF;
+}
+QListWidget::item:hover {
+    background-color: #21262D;
+}
+
+/* ---- Tooltip ---- */
+QToolTip {
+    background-color: #161B22;
+    border: 1px solid #30363D;
+    color: #E6EDF3;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
